@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle"></div>
+        <li style="--i:0" id="a">
+            <a href="#"></a>
+        </li>
+        <li style="--i:1" id="b">
+            <a href="#"></a>
+        </li>
+        <li style="--i:2" id="c">
+            <a href="#"></a>
+        </li>
+        <li style="--i:3" id="d">
+            <a href="#"></a>
+        </li>
+        <li style="--i:4" id="e">
+            <a href="#"></a>
+        </li>
+        <li style="--i:5" id="f">
+            <a href="#"></a>
+        </li>
+        <li style="--i:6" id="g">
+            <a href="#"></a>
+        </li>
+        <li style="--i:7" id="h">
+            <a href="#"></a>
+        </li>
+    </div>
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(45deg , rgb(228, 6, 228), red);
+}
+
+.menu{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 100px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(100px);
+    cursor: pointer;
+}
+
+.toggle{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: url(a.jpg);
+    z-index: 10000;
+    border-radius: 50%;
+    background-size: cover;
+    transition: transform(1.25s);
+    cursor: pointer;
+}
+
+#a{
+    height: 60px;
+    width: 60px;
+    background: url(b.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#b{
+    height: 60px;
+    width: 60px;
+    background: url(c.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#c{
+    height: 60px;
+    width: 60px;
+    background: url(d.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#d{
+    height: 60px;
+    width: 60px;
+    background: url(e.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#e{
+    height: 60px;
+    width: 60px;
+    background: url(f.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#f{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: url(g.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#g{
+    height: 60px;
+    width: 60px;
+    background: url(h.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+#h{
+    height: 60px;
+    width: 60px;
+    background: url(i.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+}
+
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
